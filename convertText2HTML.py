@@ -44,7 +44,7 @@ def printItems(dictObj, indent, htmlpage):
         htmlpage = htmlpage+ "\n"+'\t\t<h2>'+ key +  '</h2>'
         htmlpage = htmlpage + "\n"+  '\t\t<ul>'
         for k, v in dictObj[key].items() :
-            htmlpage = htmlpage +"\n"+'\t\t\t<li>' + k + ': ' + '<a href="'+str(v)+ '"></a></li>'
+            htmlpage = htmlpage +"\n"+'\t\t\t<li><a href="' + str(v)+ '">' + k + '</a></li>'
         htmlpage = htmlpage +"\n" + '\t\t</ul>'
     return htmlpage  
 
